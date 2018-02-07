@@ -43,13 +43,14 @@ var test = function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
+            console.log('here');
             img = new Image(720, 1080);
 
-            img.src = './face_close_up.jpg';
+            img.src = './face_close_up .jpg';
             console.log('img', img);
             // const fd = new FaceDetector(lbpcascade_frontalface, )
 
-          case 3:
+          case 4:
           case 'end':
             return _context.stop();
         }
@@ -62,4 +63,5 @@ var test = function () {
   };
 }();
 
+console.log('here');
 test();

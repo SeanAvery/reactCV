@@ -21,8 +21,12 @@ export default class FaceDetector {
 import lbpcascade_frontalface from './lbpcascade_frontalface'
 
 const test = async () => {
+  console.log('here')
   const img = new Image(720, 1080)
-  img.src = './face_close_up.jpg'
+  img.src = './face_close_up .jpg'
   console.log('img', img)
   // const fd = new FaceDetector(lbpcascade_frontalface, )
 }
+
+console.log('here')
+test()
