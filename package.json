@@ -4,7 +4,7 @@
   "description": "image and video processing in the browser",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "transpile": "npx babel index.js --out-file dist.js"
   },
   "keywords": [
     "video",
@@ -14,5 +14,9 @@
     "html5"
   ],
   "author": "Sean Pollock",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
 }
