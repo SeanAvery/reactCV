@@ -15,7 +15,10 @@ async function fetchWasm() {
   try {
     const wasmFile = 'example..wasm'
     const urlObj = await fetch(wasmFile)
+    const arrayBuff = await urlObj.arrayBuffer()
     console.log('urlObj', urlObj, typeof urlObj)
+    console.log('arraBuff', arrayBuff)
+
   } catch (err) {
     console.log('error in fetchWasm', err)
   }
