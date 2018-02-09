@@ -16,8 +16,11 @@ async function fetchWasm() {
     const wasmFile = 'example..wasm'
     const urlObj = await fetch(wasmFile)
     const arrayBuff = await urlObj.arrayBuffer()
+    const wasmModule = new WebAssembly.Module(arrayBuff)
+    const importObj = await WebAssembly.Module.imports(wasmModule) // wasm api
     console.log('urlObj', urlObj, typeof urlObj)
     console.log('arraBuff', arrayBuff)
+    console.log('importObj', importObj)
 
   } catch (err) {
     console.log('error in fetchWasm', err)
